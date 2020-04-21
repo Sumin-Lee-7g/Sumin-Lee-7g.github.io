@@ -1,0 +1,31 @@
+body {
+	background-color: rgb(58, 108, 189);
+  font-family: monospace;
+    font-variant: small-caps;
+
+	color: white;
+	font-size: 78px;
+}
+
+p{
+  color: rgb(171, 203, 255);
+  font-size: 20px;
+    font-variant: small-caps;
+}
+
+img {
+  text-align: center;
+  padding: 1vw;
+}
+
+a {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  margin-left: 50px
+}
+
+a:hover {
+  font-size: 15;
+  color: rgb(0,200,0);
+}

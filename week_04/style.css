@@ -1,0 +1,54 @@
+body {
+  background-color: rgb(255, 0, 0);
+}
+
+h4 {
+  font-size: 55;
+  background-color: rgba(255,255,255,.5);
+  position: absolute;
+  text-align: center;
+  top: 100px;
+  padding: 2vw;
+  margin: 3vh;
+  border:  solid black;
+}
+
+p {
+  color:white;
+  font-size: 15;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-style: italic;
+  background-color: rgba(255,0,0,.2);
+  position: absolute;
+  text-align: center;
+  top: 150px;
+  padding: 2vw;
+  margin: 7vh;
+  font-family: Avenir;
+  border: solid white;
+  border-width: thin;
+}
+
+p:hover{
+  font-size: 25;
+  color: blue;
+}
+
+img {
+  text-align: center;
+  padding: 2vw;
+  margin: 3vh;
+}
+
+a {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  margin-left: 50px
+}
+
+a:hover {
+  font-size: 15;
+  color: rgb(0,200,0);
+}

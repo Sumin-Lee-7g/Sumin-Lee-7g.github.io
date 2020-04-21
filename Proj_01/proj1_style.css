@@ -1,0 +1,26 @@
+
+
+
+
+body,h1 {
+  background-color: black;
+  font-family: monospace;
+  font-variant: small-caps;
+	color: white;
+	font-size: 10px;
+}
+
+a{
+	font-family: monospace;
+	font-variant: small-caps;
+	font-weight: bold;
+	color: white;
+	font-size: 15px;
+}
+
+button{
+	background-color: black;
+	border-width: thin;
+	padding: 0.5vw;
+	margin: 3vh;
+}

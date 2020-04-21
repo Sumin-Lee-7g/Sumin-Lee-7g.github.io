@@ -1,0 +1,58 @@
+body {
+  background-color: rgb(143, 158, 189);
+}
+  h1 {
+font-variant: small-caps;
+font-weight: normal;
+font-family:monospace;
+font-size: 50px;
+ text-align: center;
+ padding: 3vw;
+ background-color: rgb(58, 70, 94);
+  color: White;
+  }
+
+  h2 {
+  font-family:monospace;
+  font-size: 15px;
+  font-weight: lighter;
+  text-align: center;
+  }
+  h3 {
+  color: rgb(54, 60, 71);
+  font-family:monospace;
+  font-size: 15px;
+  font-weight: lighter;
+  text-align: center;
+  }
+  h4 {
+  color: rgb(78, 86, 102);
+  font-family:monospace;
+  font-size: 15px;
+  font-weight: lighter;
+  text-align: center;
+  }
+  h5 {
+  color: rgb(107, 118, 140);
+  font-family:monospace;
+  font-size: 15px;
+  font-weight: lighter;
+  text-align: center;
+  }
+  h6 {
+  color: rgb(128, 141, 168);
+  font-family:monospace;
+  font-size: 15px;
+  font-weight: lighter;
+  text-align: center;
+  }
+
+
+
+section{
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
+    text-align: center;
+    padding: 3vw;
+  }

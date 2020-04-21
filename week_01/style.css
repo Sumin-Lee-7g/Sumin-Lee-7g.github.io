@@ -1,0 +1,38 @@
+body {
+  font-family:monospace;
+  font-size: 15px;
+  font-weight: lighter;
+  background-color:rgb(58, 70, 94);
+  color: white;
+}
+
+a {
+  font-family:monospace;
+  font-size: 20px;
+  font-weight: lighter;
+  color: yellow;
+  text-decoration: none;
+}
+
+a:hover {
+  font-family:monospace;
+  font-size: 80px;
+  font-weight: lighter;
+  color: rgb(0,200,0);
+}
+
+section {
+  font-family:monospace;
+  font-weight: lighter;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 50px
+}
+
+section:hover {
+  font-family:monospace;
+  font-size: 80px;
+  font-weight: lighter;
+  color: rgb(0,200,0);
+}
