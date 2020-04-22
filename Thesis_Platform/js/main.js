@@ -305,12 +305,12 @@ function shuffle(array) {
       for(var i=0; i< loadFirst.length; i++){
         var imageX = loadFirst[i][0];
         var imageY = loadFirst[i][1];
-        $("#layer1x"+theX+"y"+theY).append("<img src='img/map_layer1/"+imageX+"/"+imageY+".png' height='256' width='256' style='position:absolute;top:"+imageY*256+"px;left:"+imageX*256+"px;height:256px;width:256px;' />");
+        $("#layer1x"+theX+"y"+theY).append("<img src='img/Photo_layer1/"+imageX+"/"+imageY+".png' height='256' width='256' style='position:absolute;top:"+imageY*256+"px;left:"+imageX*256+"px;height:256px;width:256px;' />");
       }
       for(var i=0; i< loadFirst2.length; i++){
         var imageX = loadFirst2[i][0];
         var imageY = loadFirst2[i][1];
-        $("#layer2x"+theX+"y"+theY).append("<img src='img/map_layer2/"+imageX+"/"+imageY+".jpg'  height='400' width='600' style='position:absolute;top:"+imageY*400+"px;left:"+imageX*600+"px;height:400px;width:600px;'/>");
+        $("#layer2x"+theX+"y"+theY).append("<img src='img/Photo_layer2/"+imageX+"/"+imageY+".jpg'  height='400' width='600' style='position:absolute;top:"+imageY*400+"px;left:"+imageX*600+"px;height:400px;width:600px;'/>");
       }
     };
     // * END ADD 4 MAP IMAGE BLOCKS FOR SAFE SCROLLING *
@@ -324,10 +324,10 @@ function shuffle(array) {
 
 
       for(var ii=0; ii< loadFirst.length; ii++){
-        imageURLs[imageURLs.length]="img/map_layer1/"+loadFirst[ii][0]+"/"+loadFirst[ii][1]+".png";
+        imageURLs[imageURLs.length]="img/Photo_layer1/"+loadFirst[ii][0]+"/"+loadFirst[ii][1]+".png";
       }
       for(var ii=0; ii< loadFirst2.length; ii++){
-        imageURLs[imageURLs.length]="img/map_layer2/"+loadFirst[ii][0]+"/"+loadFirst[ii][1]+".jpg";
+        imageURLs[imageURLs.length]="img/Photo_layer2/"+loadFirst[ii][0]+"/"+loadFirst[ii][1]+".jpg";
       }
 
       function loaderLoop(){
@@ -410,15 +410,15 @@ function loadRemaining(){
         }
         // IF NO SKIP ADD LAYER 1 IMAGE
         if(skip==0){
-          $("#layer1x"+theX+"y"+theY).append("<img src='img/map_layer1/"+theShuffle[0][0]+"/"+theShuffle[0][1]+".png' height='256' width='256' style='position:absolute;top:"+theShuffle[0][1]*256+"px;left:"+theShuffle[0][0]*256+"px;height:256px;width:256px;'/>");
-          imageURLs[imageURLs.length]="img/map_layer1/"+theShuffle[0][0]+"/"+theShuffle[0][1]+".png";
+          $("#layer1x"+theX+"y"+theY).append("<img src='img/Photo_layer1/"+theShuffle[0][0]+"/"+theShuffle[0][1]+".png' height='256' width='256' style='position:absolute;top:"+theShuffle[0][1]*256+"px;left:"+theShuffle[0][0]*256+"px;height:256px;width:256px;'/>");
+          imageURLs[imageURLs.length]="img/Photo_layer1/"+theShuffle[0][0]+"/"+theShuffle[0][1]+".png";
           console.log(theShuffle[0][0]+"/"+theShuffle[0][1]+"REAL"+theShuffle[0][0]);
         }
         // IF NO SKIP ADD LAYER 2 IMAGE
         if(skip2==0){
           //$("#layer2x"+theX+"y"+theY).append("<div id='layer2x"+theX+"y"+theY+""+i+""+j+"' style='position:absolute;top:"+((i*256))+"px;left:"+((j*256))+"px;height:256px;width:256px;'><img src='img/map_layer2/4/"+jimage+"/"+iimage+".jpg'/></div>   <div style='position:absolute;top:"+((i*256))+"px;left:"+((j*256))+"px;height:256px;width:256px;color:#fff;font-size:40px'>X"+j+" Y"+i+"</div>");
-          $("#layer2x"+theX+"y"+theY).append("<img src='img/map_layer2/"+theShuffle[0][0]+"/"+theShuffle[0][1]+".jpg' height='400' width='600' style='position:absolute;top:"+theShuffle[0][1]*400+"px;left:"+theShuffle[0][0]*600+"px;height:400px;width:600px;'/>");
-          imageURLs[imageURLs.length]="img/map_layer2/"+theShuffle[0][0]+"/"+theShuffle[0][1]+".jpg";
+          $("#layer2x"+theX+"y"+theY).append("<img src='img/Photo_layer2/"+theShuffle[0][0]+"/"+theShuffle[0][1]+".jpg' height='400' width='600' style='position:absolute;top:"+theShuffle[0][1]*400+"px;left:"+theShuffle[0][0]*600+"px;height:400px;width:600px;'/>");
+          imageURLs[imageURLs.length]="img/Photo_layer2/"+theShuffle[0][0]+"/"+theShuffle[0][1]+".jpg";
         }
         theShuffle.splice(0, 1)
       };
