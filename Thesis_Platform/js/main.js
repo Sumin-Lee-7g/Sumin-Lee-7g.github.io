@@ -37,16 +37,7 @@ var videoCoordinates = [[1024,0,"4y9nq"],
                         [512, 1792,"4yacy"],
                         [2304,3584,"4y9nq"]];
 
-var imageCoordinates = [[500,750,"http://41.media.tumblr.com/9fa84996fd864fc4557f4869f961a932/tumblr_nj6glqMMhX1qa49m9o1_400.jpg"],
-                        [2092,780,"http://40.media.tumblr.com/2f0706010d352343a76b14b9696aa298/tumblr_nc39voWvhe1tm8py3o1_400.jpg"],
-                        [200, 1028,"http://40.media.tumblr.com/5068ac14a7739d5e7c31366cded829dd/tumblr_nc39ujHPFt1tm8py3o1_400.jpg"],
-                        [2072,1048,"http://41.media.tumblr.com/c1df410c1986bbc68aeb89ab5c881b02/tumblr_nc39whdFEc1tm8py3o1_400.jpg"],
-                        [524, 1560,"http://40.media.tumblr.com/2f0706010d352343a76b14b9696aa298/tumblr_nc39voWvhe1tm8py3o1_400.jpg"],
-                        [956,2068,"http://40.media.tumblr.com/5068ac14a7739d5e7c31366cded829dd/tumblr_nc39ujHPFt1tm8py3o1_400.jpg"],
-                        [1816, 1816,"http://41.media.tumblr.com/c1df410c1986bbc68aeb89ab5c881b02/tumblr_nc39whdFEc1tm8py3o1_400.jpg"],
-                        [816,1512,"http://40.media.tumblr.com/5068ac14a7739d5e7c31366cded829dd/tumblr_nc39ujHPFt1tm8py3o1_400.jpg"],
-                        [512, 792,"http://41.media.tumblr.com/c1df410c1986bbc68aeb89ab5c881b02/tumblr_nc39whdFEc1tm8py3o1_400.jpg"],
-                        [304,3584,"http://40.media.tumblr.com/2f0706010d352343a76b14b9696aa298/tumblr_nc39voWvhe1tm8py3o1_400.jpg"]];
+
 
 // Load firsts with a few missing
 var loadFirst = [ [15,2],[0,2],[2,2],[3,2],[4,2],[5,2],[6,2],[7,2],
@@ -319,7 +310,7 @@ function shuffle(array) {
       for(var i=0; i< loadFirst2.length; i++){
         var imageX = loadFirst2[i][0];
         var imageY = loadFirst2[i][1];
-        $("#layer2x"+theX+"y"+theY).append("<img src='img/map_layer2/"+imageX+"/"+imageY+".jpg'  height='256' width='256' style='position:absolute;top:"+imageY*256+"px;left:"+imageX*256+"px;height:256px;width:256px;'/>");
+        $("#layer2x"+theX+"y"+theY).append("<img src='img/map_layer2/"+imageX+"/"+imageY+".jpg'  height='400' width='600' style='position:absolute;top:"+imageY*400+"px;left:"+imageX*600+"px;height:400px;width:600px;'/>");
       }
     };
     // * END ADD 4 MAP IMAGE BLOCKS FOR SAFE SCROLLING *
@@ -426,7 +417,7 @@ function loadRemaining(){
         // IF NO SKIP ADD LAYER 2 IMAGE
         if(skip2==0){
           //$("#layer2x"+theX+"y"+theY).append("<div id='layer2x"+theX+"y"+theY+""+i+""+j+"' style='position:absolute;top:"+((i*256))+"px;left:"+((j*256))+"px;height:256px;width:256px;'><img src='img/map_layer2/4/"+jimage+"/"+iimage+".jpg'/></div>   <div style='position:absolute;top:"+((i*256))+"px;left:"+((j*256))+"px;height:256px;width:256px;color:#fff;font-size:40px'>X"+j+" Y"+i+"</div>");
-          $("#layer2x"+theX+"y"+theY).append("<img src='img/map_layer2/"+theShuffle[0][0]+"/"+theShuffle[0][1]+".jpg' height='256' width='256' style='position:absolute;top:"+theShuffle[0][1]*256+"px;left:"+theShuffle[0][0]*256+"px;height:256px;width:256px;'/>");
+          $("#layer2x"+theX+"y"+theY).append("<img src='img/map_layer2/"+theShuffle[0][0]+"/"+theShuffle[0][1]+".jpg' height='400' width='600' style='position:absolute;top:"+theShuffle[0][1]*400+"px;left:"+theShuffle[0][0]*600+"px;height:400px;width:600px;'/>");
           imageURLs[imageURLs.length]="img/map_layer2/"+theShuffle[0][0]+"/"+theShuffle[0][1]+".jpg";
         }
         theShuffle.splice(0, 1)
@@ -565,7 +556,7 @@ function loadRemaining(){
       infoHidden=0;
     }else{
       $("#infoContainer").css({"visibility":"hidden"});
-      $( "#moreInfoButton" ).html( '<img src="img/info.svg" height="25px" width="25px"/>' );
+      $( "#moreInfoButton" ).html( '<img src="img/info.png" height="25px" width="25px"/>' );
       infoHidden=1;
     }
   });
